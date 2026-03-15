@@ -72,14 +72,14 @@ Load in any LV2-compatible host (Ardour, Carla, Reaper, etc.). Connect stereo in
 
 ### Main Controls
 
-| Control | Range | Default | Description |
+| Control | Values | Default | Description |
 |---------|-------|---------|-------------|
 | **Sensitivity** | 0-100% | 50% | 0% = only loudest peaks trigger loops, 100% = very quiet sounds trigger |
 | **Tempo** | 60-300 BPM | 120 BPM | Base tempo for slice length calculations |
 
 ### UI Trigger Controls
 
-| Control | Range | Description |
+| Control | Values | Description |
 |---------|-------|-------------|
 | **1 beat** | Off/On | Enable/disable whole-note stutter |
 | **1/8th** | Off/On | Enable/disable half-note stutter |
@@ -89,7 +89,7 @@ Load in any LV2-compatible host (Ardour, Carla, Reaper, etc.). Connect stereo in
 
 ### MIDI Controls
 
-| Control | Range | Default | Description |
+| Control | Values | Default | Description |
 |---------|-------|---------|-------------|
 | **MIDI Control** | 0/1 | 0 | 0 = use UI buttons, 1 = use MIDI notes |
 | **MIDI Channel** | 1-16 | 1 | MIDI channel for note control |
