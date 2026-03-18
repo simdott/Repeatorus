@@ -9,7 +9,7 @@ PLUGIN_NAME="repeatorus"
 BUILD_DIR="build"
 
 # Detect installation type based on sudo
-if [ "$EUID" -eq 0 ]; then
+if [ "$(id -u)" -eq 0 ]; then
     # Running as root (with sudo)
     INSTALL_DIR="/usr/lib/lv2/${PLUGIN_NAME}.lv2"
     SUDO=""
