@@ -42,21 +42,21 @@ sudo pacman -S base-devel lv2
 
 Using git :
 1. Open a terminal (Ctrl+Alt+T)
-2. `git clone https://github.com/simdott/repeatorus`
-3. `cd repeatorus`
-4. `sh install.sh` for user installation (recommended), or `sudo sh install.sh` for system-wide installation
+2. Run `git clone https://github.com/simdott/repeatorus`
+3. Then `cd repeatorus`
+4. And `sh install.sh` for current user (recommended), or `sudo sh install.sh` for system-wide installation
 
 
 Manual download :
 1. Download `repeatorus.tar.gz` from https://github.com/simdott/repeatorus/releases/tag/v1.0.0
 2. Extract archive
 3. Open terminal in extracted folder (Right Click in folder and "Open in a terminal")
-4. `sh install.sh` for user installation (recommended), or `sudo sh install.sh` for system-wide installation
+4. Run `sh install.sh` for current user (recommended), or `sudo sh install.sh` for system-wide installation
 
 ## Verification
 
 List installed plugins :
-lv2ls | grep repeatorus
+`lv2ls | grep repeatorus`
 
 Should show : `urn:simdott:repeatorus`
 
@@ -110,7 +110,7 @@ Load in any LV2-compatible host (Ardour, Carla, Reaper, etc.). Connect stereo in
 3. Assign MIDI notes per duration.
 4. Send notes to toggle stutter patterns.
 
-Note: MIDI Control disables UI triggers.
+Note : MIDI Control disables UI triggers.
 
 ## Files
 
@@ -124,15 +124,20 @@ Note: MIDI Control disables UI triggers.
 
 **If source folder still exists** :
 1. Open a terminal, then `cd /path/to/repeatorus`
-2. `sh uninstall.sh` for user, or `sudo sh uninstall.sh` for system-wide
+2. Run `sh uninstall.sh` for current user, or `sudo sh uninstall.sh` for system-wide uninstallation
 
 **If source folder deleted** :
 1. Open a terminal
-2. `rm -rf ~/.lv2/repeatorus.lv2` for user, or `sudo rm -rf /usr/lib/lv2/repeatorus.lv2`' for system-wide
+2. Run `rm -rf ~/.lv2/repeatorus.lv2` for current user, or `sudo rm -rf /usr/lib/lv2/repeatorus.lv2`' for system-wide uninstallation
+
+## Versions
+
+### v1.0.1 (2026-03-18)
+- Fix install.sh and uninstall.sh syntax error (replace bash-specific $EUID with POSIX id -u)
+- Update README.md installation and uninstallation instructions
 
 ### v1.0.0 (2026-03-15)
-
-- Initial release 
+- Initial release
 
 ## License
 
