@@ -29,8 +29,6 @@ LV2 stutter effect with tempo-synced durations. Trigger via UI or MIDI notes.
 - C compiler (gcc, clang, etc.)
 - LV2 development headers
 
-## Installation by Distribution
-
 **Debian/Ubuntu :**
 sudo apt-get install build-essential lv2-dev
 
@@ -40,20 +38,20 @@ sudo dnf install gcc lv2-devel
 **Arch :** 
 sudo pacman -S base-devel lv2
 
-### Build and Install
+## Installation
 
-1. Download the source :
-   git clone https://github.com/simdott/repeatorus
-   cd repeatorus
+Using git :
+1. Open a terminal (Ctrl+Alt+T)
+2. `git clone https://github.com/simdott/repeatorus`
+3. `cd repeatorus`
+4. `sh install.sh` for user installation (recommended), or `sudo sh install.sh` for system-wide installation
 
-2. Make the install script executable :
-   chmod +x install.sh
 
-3. Install for current user (recommended) :
-   ./install.sh
-   
-   Or install system-wide (requires sudo) :
-   sudo ./install.sh
+Manual download :
+1. Download `repeatorus.tar.gz` from https://github.com/simdott/repeatorus/releases/tag/v1.0.0
+2. Extract archive
+3. Open terminal in extracted folder (Right Click in folder and "Open in a terminal")
+4. `sh install.sh` for user installation (recommended), or `sudo sh install.sh` for system-wide installation
 
 ## Verification
 
@@ -122,16 +120,15 @@ Note: MIDI Control disables UI triggers.
 - install.sh - Build and install script
 - uninstall.sh - Uninstall script
 
-## Uninstall
+## Uninstallation
 
-1. Make the uninstall script executable :
-   chmod +x uninstall.sh
+**If source folder still exists** :
+1. Open a terminal, then `cd /path/to/repeatorus`
+2. `sh uninstall.sh` for user, or `sudo sh uninstall.sh` for system-wide
 
-2. Uninstall for current user :
-   ./uninstall.sh
-   
-   Or uninstall system-wide :
-   sudo ./uninstall.sh
+**If source folder deleted** :
+1. Open a terminal
+2. `rm -rf ~/.lv2/repeatorus.lv2` for user, or `sudo rm -rf /usr/lib/lv2/repeatorus.lv2`' for system-wide
 
 ### v1.0.0 (2026-03-15)
 
