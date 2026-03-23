@@ -132,7 +132,7 @@ Note : MIDI Control disables UI triggers.
 
 ## Versions
 
-### v1.0.1 (2026-03-18)
+### v1.0.1 (2026-03-23)
 - Fix install.sh and uninstall.sh syntax error (replace bash-specific $EUID with POSIX id -u)
 - Update README.md installation and uninstallation instructions
 
