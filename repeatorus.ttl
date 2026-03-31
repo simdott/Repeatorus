@@ -24,7 +24,7 @@
     doap:license <http://spdx.org/licenses/GPL-2.0-or-later> ;
     doap:description "Stutter effect with optional MIDI controls." ;
     rdfs:label "Repeatorus" ;
-    rdfs:comment "Stutter effect with optional MIDI controls." ;
+    rdfs:comment "Repeatorus v1.0.1" ;
     lv2:optionalFeature lv2:hardRTCapable ;
     lv2:port [
         a lv2:InputPort, lv2:AudioPort ;
